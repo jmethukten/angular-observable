@@ -1,0 +1,15 @@
+<mat-card class="book-card" (click)="getCurrentBook(info.id)">
+    <mat-card-content>
+        <div>
+            <img src={{info.imageLinks}} alt="">
+        </div>
+    </mat-card-content>
+    <mat-card-content class="content">
+        <h3>{{info.title}}</h3>
+        <p *ngIf="info.authors"><span class="bold">Author: </span>{{info.authors.toString()}}</p>
+
+        <p><span class="bold">Publisher: </span>{{info.publisher}}</p>
+        <p><span class="bold">Published Date: </span>{{info.publishedDate}}</p>
+        <p><span class="bold">Description: </span>{{info.description}}</p>
+    </mat-card-content>
+</mat-card>

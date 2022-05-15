@@ -1,0 +1,19 @@
+.book-card {
+  display: flex;
+  border: 0;
+  box-shadow: none;
+  margin-top: 0.7rem;
+  cursor: pointer;
+
+  .content {
+    margin-left: 0.7rem;
+    .bold {
+      font-weight: bold;
+    }
+  }
+}
+
+.book-card:hover {
+  box-shadow: 0 0 3px 3px rgb(108, 107, 107);
+  // transform: scale(1.02, 1.02);
+}

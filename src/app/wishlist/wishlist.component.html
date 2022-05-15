@@ -1,0 +1,12 @@
+<div class="left">
+    <h1>wishlist</h1>
+    <h5>My Reading Wishlist ( {{books.length}} )</h5>
+    <mat-list>
+        <mat-list-item class="wishlist" *ngFor="let info of books">
+            <mat-card class="wishlist-card">
+                <p>{{info.title}}</p>
+                <p class="close" (click)="removeWishlist(info.id)">&#10006;</p>
+            </mat-card>
+        </mat-list-item>
+    </mat-list>
+</div>

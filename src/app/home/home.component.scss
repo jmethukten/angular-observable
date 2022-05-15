@@ -1,0 +1,18 @@
+.home {
+  margin: 2rem 5rem 0 5rem;
+  // display: flex;
+}
+
+.book-wishlist {
+  display: flex;
+  .item {
+    color: red;
+  }
+  .item:first-child {
+    // border: 1px solid black;
+    width: 70%;
+  }
+  .item:last-child {
+    width: 30%;
+  }
+}
